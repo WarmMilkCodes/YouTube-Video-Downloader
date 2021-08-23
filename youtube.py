@@ -5,8 +5,7 @@ def Download_Video():
     url = YouTube(str(link.get()))
     video = url.streams.first()
     video.download()
-    tk.Label(window, text = 'Your video has been downloaded!', font='arial 15',fg='White',bg='#FF0000').place(x=10, y=140)
-
+    tk.Label(window,text = 'Success!', font = 'arial 15 bold', fg='white', bg='black', padx= 2).place(x=485, y=145)
 
 window=tk.Tk()
 window.geometry("600x200")
