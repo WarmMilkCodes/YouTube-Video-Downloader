@@ -17,11 +17,11 @@ window.title('YouTube Video Downloader')
 link = tk.StringVar()
 
 tk.Label(window,text = '    YouTube Video Downloader    ', font='arial 20 bold', fg="Black", bg="#FF0000").pack()
-tk.Label(window, text = 'Paste your YouTube link here: ', font='arial 15 bold', bg='#FF0000').place(x=5,y=60)
+tk.Label(window, text = 'Paste your YouTube link below ', font='arial 15 bold', bg='#FF0000').place(x=140,y=60)
 
 link_enter = tk.Entry(window, width = 53,textvariable = link, font = 'arial 15 bold', bg='White').place(x=5,y=100)
 
-tk.Button(window,text = 'DOWNLOAD VIDEO', font = 'arial 15 bold', fg='white', bg='black', padx= 2,command=Download_Video).place(x=385, y=140)
+tk.Button(window,text = 'DOWNLOAD VIDEO', font = 'arial 15 bold', fg='white', bg='black', padx= 2,command=Download_Video).place(x=190, y=140)
 
 
 window.mainloop()
